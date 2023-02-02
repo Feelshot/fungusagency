@@ -7,8 +7,122 @@
     <title>Fungus Agency | Agencia de diseño grafico y marketing digital</title>
 </head>
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+        <a href="#">
+            <img src="img/logo.png" alt="" aria-hidden="true">
+        </a>
+    </header>
+    <main>
+        <section>  <!--Titulo inicial, enfocado en el problema del cliente y como podemos ayudarle-->
+            <div>
+                <h1>Titulo del documento</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum vero, autem dolorum mollitia est consequuntur sit aliquam? Voluptate quis, molestias natus voluptatum provident itaque enim maxime excepturi. Soluta, modi deserunt.</p>
+                <button>Call to action</button>
+            </div>
+            <div>
+                <img src="img/img.jpg" alt="descripcion">
+            </div>
+        </section>
+        <section> <!--Seccion de beneficios por nuestros servicios-->
+            <div>
+                <img src="img/icon1.png" alt="" aria-hidden="true">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto porro quaerat consequuntur, eos enim neque aliquid dignissimos aut debitis molestiae provident.</p>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto porro quaerat consequuntur, eos enim neque aliquid dignissimos aut debitis molestiae provident.</p>
+                <img src="img/icon2.png" alt="" aria-hidden="true">
+            </div>
+            <div>
+                <img src="img/icon3.png" alt="" aria-hidden="true">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto porro quaerat consequuntur, eos enim neque aliquid dignissimos aut debitis molestiae provident.</p>
+            </div>
+        </section>
+        <section> <!--Social proof, poner uno o dos comentarios sobre nuestros clientes-->
+            <div>
+                <img src="img/profile01.png" alt="" aria-hidden="true">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto porro quaerat consequuntur, eos enim neque aliquid dignissimos aut debitis molestiae provident.</p>
+            </div>
+            <div>
+                <img src="img/profile02.png" alt="" aria-hidden="true">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto porro quaerat consequuntur, eos enim neque aliquid dignissimos aut debitis molestiae provident.</p>
+            </div> 
+        </section> 
+        <section> <!--Strong call to action, los servicios que ofrecemos, en una tarjeta, 3 tarjetas, cada una con un boton-->
+            <article>                
+                <img src="img/prod01.jpg" alt="descripcion producto">
+                <p>Titulo articulo</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto porro quaerat consequuntur, eos enim neque aliquid dignissimos aut debitis molestiae provident.</p>
+                <button>Más información</button>
+            </article>
+            <article>
+                <img src="img/prod02.jpg" alt="descripcion producto">
+                <p>Titulo articulo</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto porro quaerat consequuntur, eos enim neque aliquid dignissimos aut debitis molestiae provident.</p>
+                <button>Más información</button> 
+            </article>
+            <article>
+                <img src="img/prod03.jpg" alt="descripcion producto">
+                <p>Titulo articulo</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto porro quaerat consequuntur, eos enim neque aliquid dignissimos aut debitis molestiae provident.</p>
+                <button>Más información</button>
+            </article>
+        </section> 
+        <section> <!--Quienes somos, pequeña sección donde hablamos de nosotros, una breve descripcion con foto-->
+            <h2>¿Quienes somos?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione earum quasi pariatur sit saepe nihil et quod commodi, consequuntur voluptatibus iusto facilis, perferendis at in cumque iste amet aut hic?</p>
+            <div>
+                <img src="img/foto01.jpg" alt="foto de socio 01">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium modi distinctio, quasi ab nesciunt facere iste, minima dignissimos pariatur neque earum, ipsa natus obcaecati maxime et iure dolorum necessitatibus corrupti.</p>
+            </div>
+            <div>
+                <img src="img/foto01.jpg" alt="foto de socio 01">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium modi distinctio, quasi ab nesciunt facere iste, minima dignissimos pariatur neque earum, ipsa natus obcaecati maxime et iure dolorum necessitatibus corrupti.</p> 
+            </div>
+        </section> 
+        <section> <!--Formulario de contacto para mandar informacion en especifico-->
+            <form method="post" action='https://register-demo.freecodecamp.org'>
+                <fieldset>
+                  <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text" required /></label>
+                  <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" required /></label>
+                  <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
+                  <label for="new-password">Create a New Password: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+                </fieldset>
+                <fieldset>
+                  <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" /> Personal Account</label>
+                  <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" /> Business Account</label>
+                  <label for="terms-and-conditions">
+                    <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+                  </label>
+                </fieldset>
+                <fieldset>
+                  <label for="profile-picture">Upload a profile picture: <input id="profile-picture" type="file" name="file" /></label>
+                  <label for="age">Input your age (years): <input id="age" type="number" name="age" min="13" max="120" /></label>
+                  <label for="referrer">How did you hear about us?
+                    <select id="referrer" name="referrer">
+                      <option value="">(select one)</option>
+                      <option value="1">freeCodeCamp News</option>
+                      <option value="2">freeCodeCamp YouTube Channel</option>
+                      <option value="3">freeCodeCamp Forum</option>
+                      <option value="4">Other</option>
+                    </select>
+                  </label>
+                  <label for="bio">Provide a bio:
+                    <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+                  </label>
+                </fieldset>
+                <input type="submit" value="Submit" />
+              </form>
+        </section> 
+    </main>
+    <footer>
+        <div>
+            <a href="www.facebook.com"><img src="img/iconface.png" alt="" aria-hidden="true"></a>
+            <a href="www.instagram.com"><img src="img/iconinsta.png" alt="" aria-hidden="true"></a>
+            <a href="www.twitter.com"><img src="img/icontwit.png" alt="" aria-hidden="true"></a>
+        </div>
+        <div>
+            <p>Hecho con 💚 | Fungus Agency - 2023</p>
+        </div>
+    </footer>
 </body>
 </html>
