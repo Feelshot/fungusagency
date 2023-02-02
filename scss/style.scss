@@ -15,23 +15,155 @@ body {
     color: $black;
     header {
         background-color: $purple;
+        display: flex;
+        justify-content: center;
+        a {
+            img {
+                width: 200px;
+                margin: 10px auto;
+            }
+        }
     }
-    h1 {
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 900;
-        font-size: 30px;
-    }
-    button {
-        background-color: $green;
-        width: 200px;
-        height: 40px;
-        border-radius: 10px;
-        border: 0px solid #27223a;
-        color: $black;
-        font-family: 'Sen', sans-serif;
-        font-size: 16px;
-        font-weight: 700;
-        box-shadow: 2px 2px 5px 2px $purple;
+    main {
+        .inicial_cta {
+            .initial_cta_text {
+                display: flex;
+                flex-direction: column;
+                padding: 0px 15px;
+                h1 {
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-weight: 900;
+                    font-size: 30px;
+                    text-align: center;
+                    margin-top: 20px;
+                }
+                p {
+                    text-align: center;
+                    margin-top: 15px;
+                }
+                button {
+                    background-color: $green;
+                    width: 200px;
+                    height: 40px;
+                    border-radius: 10px;
+                    border: 0px solid #27223a;
+                    color: $black;
+                    font-family: 'Sen', sans-serif;
+                    font-size: 16px;
+                    font-weight: 700;
+                    box-shadow: 2px 2px 5px 2px $purple;
+                    margin: 20px auto;
+                }
+            }
+            .initial_img {
+                width: 300px;
+                height: 200px;
+                border: 1px solid #27223a;
+                margin: 20px auto;
+            }
+        }
+        .beneficios {
+            background-color: $purple;
+            color: $black;
+            padding: 10px 0px;
+            .bene_01 {
+                display: flex;
+                img {
+                    width: 30px;
+                    height: 30px;
+                    margin: 5px;
+                    border: 1px solid #27223a;
+                }
+                p {
+                    width: 90%;
+                }
+                background-color: $green;
+                margin: 20px;
+                border-radius: 20px;
+            }
+            .bene_02 {
+                display: flex;
+                img {
+                    width: 30px;
+                    height: 30px;
+                    margin: 5px;
+                    border: 1px solid #27223a;
+                }
+                p {
+                    width: 90%;
+                }
+                background-color: $green;
+                margin: 20px;
+                border-radius: 20px; 
+            }
+            .bene_03 {
+                display: flex;
+                img {
+                    width: 30px;
+                    height: 30px;
+                    margin: 5px;
+                    border: 1px solid #27223a;
+                }
+                p {
+                    width: 90%;
+                }
+                background-color: $green;
+                margin: 20px;
+                border-radius: 20px;
+            }
+        }
+        .social_proof {
+            div {
+                img {}
+                p {}
+            }
+        }
+        .strong_cta {
+            background-color: $purple;
+            padding: 20px;
+            article {
+                background-color: $pink;
+                margin: 20px 0px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0px 10px;
+                border-radius: 20px;
+                img {
+                    margin: 10px auto;
+                    width: 30px;
+                    height: 30px;
+                    border: 1px solid #27223a;
+                }
+                .prod_title {
+                    text-align: center;
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+                .prod_para {
+                    text-align: center;
+                    margin-top: 10px;
+                }
+                button {
+                    background-color: $green;
+                    width: 200px;
+                    height: 40px;
+                    border-radius: 10px;
+                    border: 0px solid #27223a;
+                    color: $black;
+                    font-family: 'Sen', sans-serif;
+                    font-size: 16px;
+                    font-weight: 700;
+                    box-shadow: 2px 2px 5px 2px $purple;
+                    margin: 20px auto;
+                }
+            }
+        }
+        .who_are {}
+        .form {
+            background-color: $pink;
+            color: $beige;
+        }
     }
 
     footer {

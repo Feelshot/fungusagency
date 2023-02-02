@@ -16,22 +16,120 @@ body {
   font-family: 'Sen', sans-serif;
   color: #27223a; }
   body header {
-    background-color: #5436cc; }
-  body h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 900;
-    font-size: 30px; }
-  body button {
-    background-color: #b6c600;
-    width: 200px;
-    height: 40px;
-    border-radius: 10px;
-    border: 0px solid #27223a;
+    background-color: #5436cc;
+    display: flex;
+    justify-content: center; }
+    body header a img {
+      width: 200px;
+      margin: 10px auto; }
+  body main .inicial_cta .initial_cta_text {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 15px; }
+    body main .inicial_cta .initial_cta_text h1 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 900;
+      font-size: 30px;
+      text-align: center;
+      margin-top: 20px; }
+    body main .inicial_cta .initial_cta_text p {
+      text-align: center;
+      margin-top: 15px; }
+    body main .inicial_cta .initial_cta_text button {
+      background-color: #b6c600;
+      width: 200px;
+      height: 40px;
+      border-radius: 10px;
+      border: 0px solid #27223a;
+      color: #27223a;
+      font-family: 'Sen', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      box-shadow: 2px 2px 5px 2px #5436cc;
+      margin: 20px auto; }
+  body main .inicial_cta .initial_img {
+    width: 300px;
+    height: 200px;
+    border: 1px solid #27223a;
+    margin: 20px auto; }
+  body main .beneficios {
+    background-color: #5436cc;
     color: #27223a;
-    font-family: 'Sen', sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    box-shadow: 2px 2px 5px 2px #5436cc; }
+    padding: 10px 0px; }
+    body main .beneficios .bene_01 {
+      display: flex;
+      background-color: #b6c600;
+      margin: 20px;
+      border-radius: 20px; }
+      body main .beneficios .bene_01 img {
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+        border: 1px solid #27223a; }
+      body main .beneficios .bene_01 p {
+        width: 90%; }
+    body main .beneficios .bene_02 {
+      display: flex;
+      background-color: #b6c600;
+      margin: 20px;
+      border-radius: 20px; }
+      body main .beneficios .bene_02 img {
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+        border: 1px solid #27223a; }
+      body main .beneficios .bene_02 p {
+        width: 90%; }
+    body main .beneficios .bene_03 {
+      display: flex;
+      background-color: #b6c600;
+      margin: 20px;
+      border-radius: 20px; }
+      body main .beneficios .bene_03 img {
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+        border: 1px solid #27223a; }
+      body main .beneficios .bene_03 p {
+        width: 90%; }
+  body main .strong_cta {
+    background-color: #5436cc;
+    padding: 20px; }
+    body main .strong_cta article {
+      background-color: #c536cf;
+      margin: 20px 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0px 10px;
+      border-radius: 20px; }
+      body main .strong_cta article img {
+        margin: 10px auto;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #27223a; }
+      body main .strong_cta article .prod_title {
+        text-align: center;
+        font-size: 16px;
+        font-weight: 600; }
+      body main .strong_cta article .prod_para {
+        text-align: center;
+        margin-top: 10px; }
+      body main .strong_cta article button {
+        background-color: #b6c600;
+        width: 200px;
+        height: 40px;
+        border-radius: 10px;
+        border: 0px solid #27223a;
+        color: #27223a;
+        font-family: 'Sen', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        box-shadow: 2px 2px 5px 2px #5436cc;
+        margin: 20px auto; }
+  body main .form {
+    background-color: #c536cf;
+    color: #f5f5dc; }
   body footer {
     background-color: #5436cc;
     color: #f5f5dc;
