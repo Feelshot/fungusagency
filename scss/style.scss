@@ -56,10 +56,13 @@ body {
                 }
             }
             .initial_img {
-                width: 300px;
-                height: 200px;
-                border: 1px solid #27223a;
                 margin: 20px auto;
+                display: flex;
+                justify-content: center;
+                img {
+                    width: 300px;
+                    height: auto;
+                };
             }
         }
         .beneficios {
@@ -73,6 +76,7 @@ body {
                     height: 30px;
                     margin: 5px;
                     border: 1px solid #27223a;
+                    border-radius: 20px;
                 }
                 p {
                     width: 90%;
@@ -88,6 +92,7 @@ body {
                     height: 30px;
                     margin: 5px;
                     border: 1px solid #27223a;
+                    border-radius: 20px;
                 }
                 p {
                     width: 90%;
@@ -103,6 +108,7 @@ body {
                     height: 30px;
                     margin: 5px;
                     border: 1px solid #27223a;
+                    border-radius: 20px;
                 }
                 p {
                     width: 90%;
@@ -131,8 +137,8 @@ body {
                 border-radius: 20px;
                 img {
                     margin: 10px auto;
-                    width: 30px;
-                    height: 30px;
+                    width: 50px;
+                    height: 50px;
                     border: 1px solid #27223a;
                 }
                 .prod_title {
@@ -159,10 +165,34 @@ body {
                 }
             }
         }
-        .who_are {}
+        .who_are {
+            h2 {
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 900;
+                font-size: 20px;
+                text-align: center;
+                margin-top: 20px;
+            }
+            .jess {
+                display: flex;
+                img {
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+            .dani {
+                display: flex;
+                flex-direction: row-reverse;
+                img {
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+        }
         .form {
             background-color: $pink;
             color: $beige;
+            padding: 20px;
         }
     }
 

@@ -21,7 +21,7 @@
                 <button>Call to action</button>
             </div>
             <div class="initial_img">
-                <img src="img/img.jpg" alt="descripcion">
+                <img src="img/img.png" alt="descripcion">
             </div>
         </section>
         <section class="beneficios"> <!--Seccion de beneficios por nuestros servicios-->
@@ -46,19 +46,19 @@
         </section> 
         <section class="strong_cta"> <!--Strong call to action, los servicios que ofrecemos, en una tarjeta, 3 tarjetas, cada una con un boton-->
             <article>                
-                <img src="img/prod01.jpg" alt="descripcion producto">
+                <img src="img/prod01.png" alt="descripcion producto">
                 <p class="prod_title">Titulo articulo</p>
                 <p class="prod_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto porro quaerat consequuntur, eos enim neque aliquid dignissimos aut debitis molestiae provident.</p>
                 <button>Más información</button>
             </article>
             <article>
-                <img src="img/prod02.jpg" alt="descripcion producto">
+                <img src="img/prod02.png" alt="descripcion producto">
                 <p class="prod_title">Titulo articulo</p>
                 <p class="prod_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto porro quaerat consequuntur, eos enim neque aliquid dignissimos aut debitis molestiae provident.</p>
                 <button>Más información</button> 
             </article>
             <article>
-                <img src="img/prod03.jpg" alt="descripcion producto">
+                <img src="img/prod03.png" alt="descripcion producto">
                 <p class="prod_title">Titulo articulo</p>
                 <p class="prod_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto porro quaerat consequuntur, eos enim neque aliquid dignissimos aut debitis molestiae provident.</p>
                 <button>Más información</button>
@@ -67,47 +67,22 @@
         <section class="who_are"> <!--Quienes somos, pequeña sección donde hablamos de nosotros, una breve descripcion con foto-->
             <h2>¿Quienes somos?</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione earum quasi pariatur sit saepe nihil et quod commodi, consequuntur voluptatibus iusto facilis, perferendis at in cumque iste amet aut hic?</p>
-            <div>
-                <img src="img/foto01.jpg" alt="foto de socio 01">
+            <div class="jess">
+                <img src="img/foto01.png" alt="foto de socio 01">
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium modi distinctio, quasi ab nesciunt facere iste, minima dignissimos pariatur neque earum, ipsa natus obcaecati maxime et iure dolorum necessitatibus corrupti.</p>
             </div>
-            <div>
-                <img src="img/foto01.jpg" alt="foto de socio 01">
+            <div class="dani">
+                <img src="img/foto02.png" alt="foto de socio 01">
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium modi distinctio, quasi ab nesciunt facere iste, minima dignissimos pariatur neque earum, ipsa natus obcaecati maxime et iure dolorum necessitatibus corrupti.</p> 
             </div>
         </section> 
         <section class="form"> <!--Formulario de contacto para mandar informacion en especifico-->
-            <form method="post" action='https://register-demo.freecodecamp.org'>
-                <fieldset>
-                  <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text" required /></label>
-                  <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" required /></label>
-                  <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
-                  <label for="new-password">Create a New Password: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
-                </fieldset>
-                <fieldset>
-                  <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" /> Personal Account</label>
-                  <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" /> Business Account</label>
-                  <label for="terms-and-conditions">
-                    <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
-                  </label>
-                </fieldset>
-                <fieldset>
-                  <label for="profile-picture">Upload a profile picture: <input id="profile-picture" type="file" name="file" /></label>
-                  <label for="age">Input your age (years): <input id="age" type="number" name="age" min="13" max="120" /></label>
-                  <label for="referrer">How did you hear about us?
-                    <select id="referrer" name="referrer">
-                      <option value="">(select one)</option>
-                      <option value="1">freeCodeCamp News</option>
-                      <option value="2">freeCodeCamp YouTube Channel</option>
-                      <option value="3">freeCodeCamp Forum</option>
-                      <option value="4">Other</option>
-                    </select>
-                  </label>
-                  <label for="bio">Provide a bio:
-                    <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
-                  </label>
-                </fieldset>
-                <input type="submit" value="Submit" />
+            <p>Envianos un mensaje y con gusto te ayudaremos</p>
+            <form method="post" action='envia.php'>
+                <input type="text" name="name" id="name" placeholder="Nombre">
+                <input type="email" name="email" id="email" placeholder="Email">
+                <textarea name="message" id="message" placeholder="¿Como te podemos ayudar?" rows="4"></textarea>
+                <input type="submit" value="Enviar mensaje" class="button_form">
               </form>
         </section> 
     </main>

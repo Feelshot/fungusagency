@@ -48,10 +48,12 @@ body {
       box-shadow: 2px 2px 5px 2px #5436cc;
       margin: 20px auto; }
   body main .inicial_cta .initial_img {
-    width: 300px;
-    height: 200px;
-    border: 1px solid #27223a;
-    margin: 20px auto; }
+    margin: 20px auto;
+    display: flex;
+    justify-content: center; }
+    body main .inicial_cta .initial_img img {
+      width: 300px;
+      height: auto; }
   body main .beneficios {
     background-color: #5436cc;
     color: #27223a;
@@ -65,7 +67,8 @@ body {
         width: 30px;
         height: 30px;
         margin: 5px;
-        border: 1px solid #27223a; }
+        border: 1px solid #27223a;
+        border-radius: 20px; }
       body main .beneficios .bene_01 p {
         width: 90%; }
     body main .beneficios .bene_02 {
@@ -77,7 +80,8 @@ body {
         width: 30px;
         height: 30px;
         margin: 5px;
-        border: 1px solid #27223a; }
+        border: 1px solid #27223a;
+        border-radius: 20px; }
       body main .beneficios .bene_02 p {
         width: 90%; }
     body main .beneficios .bene_03 {
@@ -89,7 +93,8 @@ body {
         width: 30px;
         height: 30px;
         margin: 5px;
-        border: 1px solid #27223a; }
+        border: 1px solid #27223a;
+        border-radius: 20px; }
       body main .beneficios .bene_03 p {
         width: 90%; }
   body main .strong_cta {
@@ -105,8 +110,8 @@ body {
       border-radius: 20px; }
       body main .strong_cta article img {
         margin: 10px auto;
-        width: 30px;
-        height: 30px;
+        width: 50px;
+        height: 50px;
         border: 1px solid #27223a; }
       body main .strong_cta article .prod_title {
         text-align: center;
@@ -127,9 +132,27 @@ body {
         font-weight: 700;
         box-shadow: 2px 2px 5px 2px #5436cc;
         margin: 20px auto; }
+  body main .who_are h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px; }
+  body main .who_are .jess {
+    display: flex; }
+    body main .who_are .jess img {
+      width: 100px;
+      height: 100px; }
+  body main .who_are .dani {
+    display: flex;
+    flex-direction: row-reverse; }
+    body main .who_are .dani img {
+      width: 100px;
+      height: 100px; }
   body main .form {
     background-color: #c536cf;
-    color: #f5f5dc; }
+    color: #f5f5dc;
+    padding: 20px; }
   body footer {
     background-color: #5436cc;
     color: #f5f5dc;
