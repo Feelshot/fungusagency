@@ -45,8 +45,14 @@ body {
       font-family: 'Sen', sans-serif;
       font-size: 16px;
       font-weight: 700;
-      box-shadow: 2px 2px 5px 2px #5436cc;
+      box-shadow: 2px 2px 1px 1px #5436cc;
       margin: 20px auto; }
+    body main .inicial_cta .initial_cta_text button:hover {
+      background-color: #5436cc;
+      color: #f5f5dc;
+      width: 220px;
+      height: 40px;
+      box-shadow: 2px 2px 1px 1px #b6c600; }
   body main .inicial_cta .initial_img {
     margin: 20px auto;
     display: flex;
@@ -130,8 +136,14 @@ body {
         font-family: 'Sen', sans-serif;
         font-size: 16px;
         font-weight: 700;
-        box-shadow: 2px 2px 5px 2px #5436cc;
+        box-shadow: 2px 2px 1px 1px #5436cc;
         margin: 20px auto; }
+      body main .strong_cta article button:hover {
+        background-color: #5436cc;
+        color: #f5f5dc;
+        width: 220px;
+        height: 40px;
+        box-shadow: 2px 2px 1px 1px #b6c600; }
   body main .who_are h2 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
