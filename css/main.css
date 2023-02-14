@@ -38,7 +38,7 @@ body {
     body main .inicial_cta .initial_cta_text button {
       background-color: #b6c600;
       width: 200px;
-      height: 40px;
+      height: 50px;
       border-radius: 10px;
       border: 0px solid #27223a;
       color: #27223a;
@@ -51,8 +51,9 @@ body {
       background-color: #5436cc;
       color: #f5f5dc;
       width: 220px;
-      height: 40px;
-      box-shadow: 2px 2px 1px 1px #b6c600; }
+      height: 50px;
+      box-shadow: 2px 2px 1px 1px #b6c600;
+      transition: .3s; }
   body main .inicial_cta .initial_img {
     margin: 20px auto;
     display: flex;
@@ -63,46 +64,51 @@ body {
   body main .beneficios {
     background-color: #5436cc;
     color: #27223a;
-    padding: 10px 0px; }
-    body main .beneficios .bene_01 {
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    body main .beneficios .benef {
       display: flex;
+      padding: 20px 10px;
+      width: 300px;
+      height: auto;
+      margin: 20px 0 0 0;
       background-color: #b6c600;
-      margin: 20px;
       border-radius: 20px; }
-      body main .beneficios .bene_01 img {
+      body main .beneficios .benef img {
         width: 30px;
         height: 30px;
-        margin: 5px;
+        margin: 5px 10px 0 0;
         border: 1px solid #27223a;
         border-radius: 20px; }
-      body main .beneficios .bene_01 p {
-        width: 90%; }
-    body main .beneficios .bene_02 {
+      body main .beneficios .benef div span {
+        font-weight: 700; }
+      body main .beneficios .benef div p {
+        margin: 15px 15px 0 0; }
+  body main .social_proof div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    body main .social_proof div .quote_client {
+      text-align: center;
+      font-weight: 700;
+      font-size: 26px;
+      margin-top: 15px;
+      width: 300px; }
+    body main .social_proof div div {
       display: flex;
-      background-color: #b6c600;
-      margin: 20px;
-      border-radius: 20px; }
-      body main .beneficios .bene_02 img {
-        width: 30px;
-        height: 30px;
-        margin: 5px;
-        border: 1px solid #27223a;
-        border-radius: 20px; }
-      body main .beneficios .bene_02 p {
-        width: 90%; }
-    body main .beneficios .bene_03 {
-      display: flex;
-      background-color: #b6c600;
-      margin: 20px;
-      border-radius: 20px; }
-      body main .beneficios .bene_03 img {
-        width: 30px;
-        height: 30px;
-        margin: 5px;
-        border: 1px solid #27223a;
-        border-radius: 20px; }
-      body main .beneficios .bene_03 p {
-        width: 90%; }
+      flex-direction: row; }
+      body main .social_proof div div img {
+        width: 60px;
+        display: none; }
+      body main .social_proof div div .text_client {
+        font-style: italic;
+        width: 90%;
+        text-align: center;
+        margin: 15px 20px; }
+    body main .social_proof div .name_client {
+      margin: 15px 0 20px 0; }
   body main .strong_cta {
     background-color: #5436cc;
     padding: 20px; }
@@ -113,12 +119,14 @@ body {
       flex-direction: column;
       justify-content: center;
       padding: 0px 10px;
-      border-radius: 20px; }
+      border-radius: 20px;
+      color: beige; }
       body main .strong_cta article img {
         margin: 10px auto;
         width: 50px;
         height: 50px;
-        border: 1px solid #27223a; }
+        border: 1px solid #27223a;
+        border-radius: 30px; }
       body main .strong_cta article .prod_title {
         text-align: center;
         font-size: 16px;
@@ -143,28 +151,86 @@ body {
         color: #f5f5dc;
         width: 220px;
         height: 40px;
-        box-shadow: 2px 2px 1px 1px #b6c600; }
+        box-shadow: 2px 2px 1px 1px #b6c600;
+        transition: .3s; }
   body main .who_are h2 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
     font-size: 20px;
     text-align: center;
     margin-top: 20px; }
+  body main .who_are .who_text {
+    width: 300px;
+    text-align: center;
+    margin: auto; }
   body main .who_are .jess {
-    display: flex; }
+    display: flex;
+    align-items: center;
+    padding: 0 20px; }
     body main .who_are .jess img {
       width: 100px;
-      height: 100px; }
+      height: 200px;
+      margin-right: 15px; }
+    body main .who_are .jess .jess_content .jess_name {
+      font-weight: 700;
+      margin: 10px 0; }
   body main .who_are .dani {
     display: flex;
-    flex-direction: row-reverse; }
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 0 20px; }
     body main .who_are .dani img {
       width: 100px;
-      height: 100px; }
+      height: 200px;
+      margin-left: 15px; }
+    body main .who_are .dani .dani_content {
+      margin: 15px 0; }
+      body main .who_are .dani .dani_content .dani_name {
+        font-weight: 700; }
   body main .form {
     background-color: #c536cf;
     color: #f5f5dc;
-    padding: 20px; }
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px; }
+    body main .form p {
+      font-size: 20px;
+      font-weight: 600; }
+    body main .form .cssBasic {
+      border-radius: 10px;
+      font-family: 'Sen', sans-serif;
+      border: 3px solid #5436cc;
+      padding-left: 10px; }
+    body main .form #name {
+      width: 275px;
+      height: 30px;
+      margin-top: 15px; }
+    body main .form #email {
+      width: 275px;
+      height: 30px;
+      margin-top: 10px; }
+    body main .form #message {
+      width: 275px;
+      height: 60px;
+      margin-top: 10px; }
+    body main .form .button_form {
+      width: 200px;
+      height: 30px;
+      margin-top: 15px;
+      background-color: #b6c600;
+      color: #27223a;
+      box-shadow: 2px 2px 2px 2px #5436cc;
+      border: none; }
+    body main .form .button_form:hover {
+      transition: .3s;
+      width: 225px;
+      background-color: #5436cc;
+      color: #f5f5dc;
+      box-shadow: 2px 2px 2px 2px #b6c600; }
   body footer {
     background-color: #5436cc;
     color: #f5f5dc;
