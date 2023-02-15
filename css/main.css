@@ -35,25 +35,31 @@ body {
     body main .inicial_cta .initial_cta_text p {
       text-align: center;
       margin-top: 15px; }
-    body main .inicial_cta .initial_cta_text button {
+    body main .inicial_cta .initial_cta_text .button_cta {
       background-color: #b6c600;
-      width: 200px;
+      width: 300px;
       height: 50px;
       border-radius: 10px;
       border: 0px solid #27223a;
-      color: #27223a;
-      font-family: 'Sen', sans-serif;
-      font-size: 16px;
-      font-weight: 700;
       box-shadow: 2px 2px 1px 1px #5436cc;
-      margin: 20px auto; }
-    body main .inicial_cta .initial_cta_text button:hover {
+      margin: 20px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      body main .inicial_cta .initial_cta_text .button_cta .link:link, body main .inicial_cta .initial_cta_text .button_cta .link:visited, body main .inicial_cta .initial_cta_text .button_cta .link:active {
+        text-decoration: none;
+        color: #27223a;
+        font-size: 16px;
+        font-weight: 700;
+        font-family: 'Sen', sans-serif; }
+    body main .inicial_cta .initial_cta_text .button_cta:hover {
       background-color: #5436cc;
-      color: #f5f5dc;
-      width: 220px;
+      width: 280px;
       height: 50px;
       box-shadow: 2px 2px 1px 1px #b6c600;
       transition: .3s; }
+      body main .inicial_cta .initial_cta_text .button_cta:hover .link:link, body main .inicial_cta .initial_cta_text .button_cta:hover .link:visited, body main .inicial_cta .initial_cta_text .button_cta:hover .link:active {
+        color: #f5f5dc; }
   body main .inicial_cta .initial_img {
     margin: 20px auto;
     display: flex;
@@ -134,7 +140,7 @@ body {
       body main .strong_cta article .prod_para {
         text-align: center;
         margin-top: 10px; }
-      body main .strong_cta article button {
+      body main .strong_cta article .button_strong_cta {
         background-color: #b6c600;
         width: 200px;
         height: 40px;
@@ -145,14 +151,25 @@ body {
         font-size: 16px;
         font-weight: 700;
         box-shadow: 2px 2px 1px 1px #5436cc;
-        margin: 20px auto; }
-      body main .strong_cta article button:hover {
+        margin: 20px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        body main .strong_cta article .button_strong_cta .link:link, body main .strong_cta article .button_strong_cta .link:visited, body main .strong_cta article .button_strong_cta .link:active {
+          text-decoration: none;
+          color: #27223a;
+          font-size: 16px;
+          font-weight: 700;
+          font-family: 'Sen', sans-serif; }
+      body main .strong_cta article .button_strong_cta:hover {
         background-color: #5436cc;
         color: #f5f5dc;
         width: 220px;
         height: 40px;
         box-shadow: 2px 2px 1px 1px #b6c600;
         transition: .3s; }
+        body main .strong_cta article .button_strong_cta:hover .link:link, body main .strong_cta article .button_strong_cta:hover .link:visited, body main .strong_cta article .button_strong_cta:hover .link:active {
+          color: #f5f5dc; }
   body main .who_are h2 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
@@ -252,12 +269,12 @@ body {
         text-align: center;
         margin-top: 25px;
         font-size: 24px; }
-      body main .inicial_cta .initial_cta_text button {
+      body main .inicial_cta .initial_cta_text .button_cta {
         width: 400px;
         height: 60px;
         border-radius: 15px;
         font-size: 22px; }
-      body main .inicial_cta .initial_cta_text button:hover {
+      body main .inicial_cta .initial_cta_text .button_cta:hover {
         background-color: #5436cc;
         color: #f5f5dc;
         width: 420px;
@@ -318,13 +335,13 @@ body {
         font-size: 24px; }
       body main .strong_cta article .prod_para {
         font-size: 20px; }
-      body main .strong_cta article button {
+      body main .strong_cta article .button_strong_cta {
         width: 260px;
         height: 60px;
         border-radius: 20px;
         font-size: 20px;
         margin: 30px auto; }
-      body main .strong_cta article button:hover {
+      body main .strong_cta article .button_strong_cta:hover {
         width: 280px;
         height: 60px; }
   body main .who_are h2 {
