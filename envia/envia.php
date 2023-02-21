@@ -1,57 +1,29 @@
 <?php
-$nombre = $_POST['name'];
-$mail = $_POST['email'];
-$empresa = $_POST['message'];
-
-$header = 'From: ' . $mail . " \r\n";
-$header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
-$header .= "Mime-Version: 1.0 \r\n";
-$header .= "Content-Type: text/plain";
-
-$mensaje = "Este mensaje fue enviado por... " . $nombre . " \r\n";
-$mensaje .= "Su e-mail es: " . $mail . " \r\n";
-$mensaje .= "Mensaje: " . $_POST['mensaje'] . " \r\n";
-$mensaje .= "Fue enviado... " . date('d/m/Y', time());
-
-$para = "fungusacontacto@gmail.com";
-$asunto = 'Formulario fungus pagina principal';
-
-
-mail($para, $asunto, utf8_decode($mensaje), $header);
-
-
+$remitente = $_POST['email'];
+$destinatario = 'fungusacontacto@gmail.com'; // en esta línea va el mail del destinatario.
+$asunto = 'Formulario fungus'; // acá se puede modificar el asunto del mail
+if (!$_POST){
 ?>
-</h2>
-<h2 align="center">Gracias!</h2>
 
-<p align="center">Tu mensaje ha sido enviado correctamente, pronto nos pondremos en contacto con usted.</p>
-<p align="center"> </p>
-<p><span style="color:red;font-size:150%;font-weight:bold;"><?php print $email; ?></span></p>
+<?php
+}else{
+	 
+$cuerpo .= "Nombre: " . $_POST["name"] . "\r\n"; 
+$cuerpo .= "Email: " . $_POST["email"] . "\r\n"; 
+$cuerpo .= "Mensaje: " . $_POST["message"] . "\r\n";
 
-<p align="center">Si no es correcto,
+	//las líneas de arriba definen el contenido del mail. Las palabras que están dentro de $_POST[""] deben coincidir con el "name" de cada campo. 
+	// Si se agrega un campo al formulario, hay que agregarlo acá.
 
-<script type='text/javascript'>
+    $headers  = "MIME-Version: 1.0\n";
+    $headers .= "Content-type: text/plain; charset=utf-8\n";
+    $headers .= "X-Priority: 3\n";
+    $headers .= "X-MSMail-Priority: Normal\n";
+    $headers .= "X-Mailer: php\n";
+    $headers .= "From: \"".$_POST['name']." ".$_POST['email']."\" <".$remitente.">\n";
 
-document.write('<a href="javascript:history.go(-1);">vuelve atras</a>');
-
-</script>
-
-<noscript>vuelve atras</noscript> y envialo de nuevo</p>
-
-<script type='text/javascript'>
-
-document.write('<p class="details"><a href="javascript:history.go(-2);">Volver a la página de inicio.</a></p>');
-
-</script>
-
-<script type='text/javascript'>
-
-setTimeout('history.go(-2)', 9000);
-
-</script>
-
-<noscript>
-
-<p align="center" class="details">Pulsa el boton "atras" en tu navegador para volver a la página anterior.</p>
-
-</noscript>
+    mail($destinatario, $asunto, $cuerpo, $headers);
+    
+    include 'confirma.html'; //se debe crear un html que confirma el envío
+}
+?>
