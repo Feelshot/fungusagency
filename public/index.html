@@ -122,15 +122,15 @@
             </div>
         </section> 
         <div id="formSection"></div>
-        <section class="form"> <!--Formulario de contacto para mandar informacion en especifico-->
+        <div class="form"> <!--Formulario de contacto para mandar informacion en especifico-->
             <p>Envianos un mensaje y con gusto te ayudaremos</p>
-            <form method="post" action="envia.php">
-                <input type="text" name="name" id="name" placeholder="Nombre" class="cssBasic"> <br>
-                <input type="email" name="email" id="email" placeholder="Email" class="cssBasic"> <br>
-                <textarea name="message" id="message" placeholder="¿Como te podemos ayudar?" rows="4" class="cssBasic"></textarea> <br>
+            <form action="envia/envia.php" method="post">
+                <input id="name" name="name" placeholder="Nombre" type="text" class="cssBasic"> <br>
+                <input id="email" name="email" placeholder="Email" type="email" class="cssBasic"> <br>
+                <textarea id="message" name="message" placeholder="¿Como te podemos ayudar?" rows="4" class="cssBasic"></textarea> <br>
                 <input type="submit" value="Enviar mensaje" class="button_form cssBasic">
               </form>
-        </section> 
+        </div> 
     </main>
     <footer>
         <div>
