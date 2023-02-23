@@ -24,6 +24,6 @@ $cuerpo .= "Mensaje: " . $_POST["message"] . "\r\n";
 
     mail($destinatario, $asunto, $cuerpo, $headers);
     
-    include 'confirma.html'; //se debe crear un html que confirma el envío
+    include '../envia/confirma.html'; //se debe crear un html que confirma el envío
 }
 ?>
